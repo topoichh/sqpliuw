@@ -40,12 +40,12 @@
         }
 
         .buttons button:hover {
-            background-color: #A91079; /* Lighter purple on hover */
+            background-color: #A91079;
         }
 
-        /* Style for the 'chosen' button (solid purple) */
+        
         .chosen {
-            background-color: #6A0D91; /* Solid purple */
+            background-color: #6A0D91;
         }
 
         h1 {
@@ -120,18 +120,17 @@
     <h1>sqpiluw phonk</h1>
 
     <div id="fonkiImages" class="fonki-images" style="display: none;">
-        <!-- 10 blurred rectangles with clickable images linking to Google -->
+        <div class="image-container"><a href="https://e.pcloud.link/publink/show?code=XZ6zVlZ9fq23Oolv1L7RDHcvH4vLp6qU48k" target="_blank"><img src="stats\stat6.png" alt="Phonk"></a></div>
+        <div class="image-container"><a href="https://e.pcloud.link/publink/show?code=XZwzVlZHaXeSbjGtwS4l7jiPJhAX7XkufoV" target="_blank"><img src="stats\stat5.png" alt="Phonk"></a></div>
+        <div class="image-container"><a href="https://e.pcloud.link/publink/show?code=XZnzVlZIkokEL1fdeyfvSJYtQShnj2LOKC7" target="_blank"><img src="stats\stat7.png" alt="Phonk"></a></div>
+        <div class="image-container"><a href="https://e.pcloud.link/publink/show?code=XZNFVlZoWtl13B0vC0GK940nf5GFLaFRlgy" target="_blank"><img src="stats\stat4.bmp" alt="Phonk"></a></div>
         <div class="image-container"><a href="https://e.pcloud.link/publink/show?code=XZG6XlZbaqTHxSTuv4asuExAqqw4HPdvC97" target="_blank"><img src="stats/stat3.bmp" alt="Phonk"></a></div>
         <div class="image-container"><a href="https://e.pcloud.link/publink/show?code=XZU6XlZr1QOXCzvgcuukAnlbiMWlB036gf7" target="_blank"><img src="stats\stat2.bmp" alt="Phonk"></a></div>
         <div class="image-container"><a href="https://e.pcloud.link/publink/show?code=XZ6qXlZCr5tSWApkp4RIAHCfQyUnbmPwPrk" target="_blank"><img src="stats\stat.jpg" alt="Phonk"></a></div>
-        <div class="image-container"><a href="#" target="_blank"><img src="https://topoichh.cgcristi.xyz/phonk/no.png" alt="Phonk"></a></div>
-        <div class="image-container"><a href="#" target="_blank"><img src="https://topoichh.cgcristi.xyz/phonk/no.png" alt="Phonk"></a></div>
-        <div class="image-container"><a href="#" target="_blank"><img src="https://topoichh.cgcristi.xyz/phonk/no.png" alt="Phonk"></a></div>
-        <div class="image-container"><a href="#" target="_blank"><img src="https://topoichh.cgcristi.xyz/phonk/no.png" alt="Phonk"></a></div>
-        <div class="image-container"><a href="#" target="_blank"><img src="https://topoichh.cgcristi.xyz/phonk/no.png" alt="Phonk"></a></div>
-        <div class="image-container"><a href="#" target="_blank"><img src="https://topoichh.cgcristi.xyz/phonk/no.png" alt="Phonk"></a></div>
-        <div class="image-container"><a href="#" target="_blank"><img src="https://topoichh.cgcristi.xyz/phonk/no.png" alt="Phonk"></a></div>
-        <div class="image-container"><a href="#" target="_blank"><img src="https://topoichh.cgcristi.xyz/phonk/no.png" alt="Phonk"></a></div>
+        <div class="image-container"><a href="#" target="_blank"><img src="no.png" alt="Phonk"></a></div>
+        <div class="image-container"><a href="#" target="_blank"><img src="no.png" alt="Phonk"></a></div>
+        <div class="image-container"><a href="#" target="_blank"><img src="no.png" alt="Phonk"></a></div>
+        <div class="image-container"><a href="#" target="_blank"><img src="no.png" alt="Phonk"></a></div>
     </div>
 
     <div id="daftPunkStory">
@@ -158,24 +157,24 @@
     <script>
         function chooseButton(buttonId) {
             const buttons = document.querySelectorAll('.buttons button');
-            buttons.forEach(button => button.classList.remove('chosen')); // Remove 'chosen' class from all buttons
+            buttons.forEach(button => button.classList.remove('chosen')); 
             const button = document.getElementById(buttonId);
-            button.classList.add('chosen'); // Add 'chosen' class to the clicked button
+            button.classList.add('chosen'); 
             
             if (buttonId === 'fonki') {
-                document.getElementById('fonkiImages').style.display = 'flex'; // Show the Fonki images
-                document.getElementById('daftPunkStory').style.display = 'none'; // Hide the Daft Punk story
+                document.getElementById('fonkiImages').style.display = 'flex'; 
+                document.getElementById('daftPunkStory').style.display = 'none'; 
             } else if (buttonId === 'telegram') {
-                document.getElementById('fonkiImages').style.display = 'none'; // Hide Fonki images
-                document.getElementById('daftPunkStory').style.display = 'none'; // Hide Daft Punk story
+                document.getElementById('fonkiImages').style.display = 'none'; 
+                document.getElementById('daftPunkStory').style.display = 'none'; 
             } else if (buttonId === 'proSait') {
-                document.getElementById('fonkiImages').style.display = 'none'; // Hide Fonki images
-                document.getElementById('daftPunkStory').style.display = 'block'; // Show the Daft Punk story
+                document.getElementById('fonkiImages').style.display = 'none'; 
+                document.getElementById('daftPunkStory').style.display = 'block'; 
             }
         }
 
         function showStory() {
-            document.getElementById("daftPunkStory").style.display = "block"; // Ensure the story is shown when needed
+            document.getElementById("daftPunkStory").style.display = "block"; 
         }
     </script>
 </body>
