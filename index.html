@@ -76,13 +76,17 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
 
+        /* Updated CSS for scrollable images */
         .fonki-images {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap; /* Prevent wrapping of images */
             gap: 10px;
-            justify-content: center;
+            justify-content: flex-start; /* Align images to the start */
             margin-top: 20px;
             width: 100%;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            scroll-behavior: smooth; /* Optional: smooth scrolling */
+            padding-bottom: 10px; /* Optional: to ensure the images don't get cut off at the bottom */
         }
 
         .fonki-images .image-container {
