@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -39,7 +40,7 @@
             cursor: pointer;
             border-radius: 50px;
             transition: background-color 0.3s ease;
-            flex: 1 1 45%; /* Adjust button width for smaller screens */
+            flex: 1 1 45%;
             text-align: center;
         }
 
@@ -76,34 +77,29 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
 
-        /* Updated CSS for scrollable images */
+        /* Scrollable images */
         .fonki-images {
             display: flex;
-            flex-wrap: nowrap; /* Prevent wrapping of images */
             gap: 10px;
-            justify-content: flex-start; /* Align images to the start */
             margin-top: 20px;
             width: 100%;
-            overflow-x: auto; /* Enable horizontal scrolling */
-            scroll-behavior: smooth; /* Optional: smooth scrolling */
-            padding-bottom: 10px; /* Optional: to ensure the images don't get cut off at the bottom */
+            overflow-x: scroll;
+            padding-bottom: 10px;
         }
 
         .fonki-images .image-container {
             position: relative;
-            width: 45%;
-            height: auto;
+            width: 200px;
+            height: 200px;
             overflow: hidden;
             border-radius: 15px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            margin: 5px;
         }
 
         .fonki-images img {
             width: 100%;
             height: auto;
             object-fit: cover;
-            transition: filter 0.3s ease;
         }
 
         @keyframes fadeIn {
@@ -114,35 +110,35 @@
         /* Mobile responsiveness */
         @media screen and (max-width: 768px) {
             h1 {
-                font-size: 2.5rem; /* Smaller title on mobile */
+                font-size: 2.5rem;
             }
 
             .buttons {
-                flex-direction: column; /* Stack buttons vertically on mobile */
+                flex-direction: column;
                 align-items: center;
             }
 
             .buttons button {
-                width: 90%; /* Full width buttons on mobile */
-                margin: 5px 0; /* Add spacing between buttons */
+                width: 90%;
+                margin: 5px 0;
             }
 
             .fonki-images .image-container {
-                width: 90%; /* Full-width images on mobile */
+                width: 90%;
             }
         }
 
         @media screen and (max-width: 480px) {
             h1 {
-                font-size: 2rem; /* Even smaller title on very small screens */
+                font-size: 2rem;
             }
 
             .buttons button {
-                font-size: 14px; /* Smaller font size for buttons */
+                font-size: 14px;
             }
 
             #daftPunkStory, #gtaStory {
-                font-size: 0.9rem; /* Smaller font size for stories */
+                font-size: 0.9rem;
             }
         }
     </style>
@@ -227,3 +223,4 @@
     </script>
 </body>
 </html>
+```
